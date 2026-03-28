@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVault Music Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>StreamVault Music Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#media-editing">Media Editing</a></li>
+                <li><a href="#music-player">Music Player</a></li>
+                <li><a href="#fan-experience">Fan Experience</a></li>
+                <li><a href="#creator-dashboard">Creator Dashboard</a></li>
+                <li><a href="#social-features">Social Features</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login System</h2>
+            <form id="login-form">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+        <section id="profile">
+            <h2>User Profile</h2>
+            <div>
+                <label for="avatar">Profile Picture:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/*"><br>
+                <label for="bio">Bio:</label><br>
+                <textarea id="bio" name="bio"></textarea><br>
+                <button id="save-profile">Save Profile</button>
+            </div>
+        </section>
+        <section id="media-editing">
+            <h2>Advanced Media Editing Tools</h2>
+            <canvas id="media-editor"></canvas>
+            <button id="crop">Crop</button>
+            <button id="trim">Trim</button>
+            <button id="reposition">Reposition</button>
+            <button id="apply-filters">Apply Filters</button>
+        </section>
+        <section id="music-player">
+            <h2>Music Player</h2>
+            <audio controls id="audio-player">
+                <source src="song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section id="fan-experience">
+            <h2>Fan Experience</h2>
+            <button id="listen-free">Listen Free</button>
+            <button id="purchase-song">Purchase</button>
+            <button id="rent-song">Rent (60% off)</button>
+        </section>
+        <section id="creator-dashboard">
+            <h2>Creator Dashboard</h2>
+            <div>
+                <p>Revenue Tracking: $<span id="revenue">0</span></p>
+                <p>Admin Commission: <span id="commission">10%</span></p>
+            </div>
+        </section>
+        <section id="social-features">
+            <h2>Social Features</h2>
+            <textarea id="status-post" placeholder="What's on your mind?"></textarea><br>
+            <button id="post-status">Post Status</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
